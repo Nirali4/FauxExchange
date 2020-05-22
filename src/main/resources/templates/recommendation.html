@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction-of-cryptocurrency</title>
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation-float.min.css"
+        integrity="sha256-sP0p6J7SbJGiJ2gkdY1nkVsLgdwiFN2kI370lU+zacQ= sha384-yZLxxcD8nfiSt1qfKJWwHwtkL58WZDTlkBnZN60qr3ZS35+LDsmUF2JHLxdyZ+KU sha512-Z3WbpfWFSsK2dBvoSYZnMvPmxSJUa5cxj3TYlmyj6cq8IXy7iB2nlUk+jjms8gnz4HmpQk/yhRSlRzW7keoSlg=="
+        crossorigin="anonymous">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-ksLmXa0k3ACbX6azB9g6l7XlmSKFBkuH0DXKNwULXtE= sha384-RGTvu65DAT+yLQsTj5tnITDrMfrS5mbajNAYILSg4hHr9vRr/3Y9q0WAdChqLKfx sha512-KMJ7XYrv5UcwEvJFaYnLSdN5O3fT7aQvjed//LQPB3AsN4VPA/wXG9j4x4vKZkjNmU/U8aZC9Ac3FYxs9lPXcw=="
+        crossorigin="anonymous">
+
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation-rtl.min.css"
+        integrity="sha256-jvk46bzgetf2fy3FF19toDOoy9CG3aFqZfd229doSyo= sha384-w6E9ynA6OV6MFswc7C8nr8QoBiRtqqOKF/5M9ZVyVDDyrUPLI75xizNuXgRZxWK5 sha512-7MZk47L+5Mj6Y0dP3NuB2aqlNdDgzTlCf8m50nvgnCHUbxZ9KabCy8VUzQAl/DqDKwR7E6JsCf1MUjkfCiVzJw=="
+        crossorigin="anonymous">
+
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel=stylesheet type="text/css" href="css/main.css">
+    <link rel=stylesheet type="text/css" href="css/color.css">
+    <link rel=stylesheet type="text/css" href="css/nav.css">
+</header>
+<!-- https://foundation.zurb.com/sites/docs -->
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left reveal-for-large nav-dark" id="mobileNav" data-off-canvas
+            data-transition="overlap">
+            <button class="close-button" aria-label="Close Menu" type="button" data-toggle="mobileNav">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <br>
+            <br>
+            <!-- NAV -->
+            <div th:replace="fragments/nav :: navigation">
+            </div>
+            <!-- NAV -->
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="center-body__bg"></div>
+            <div class="body-content">
+                <div class="nav-NEW nav-side">
+                    <div th:replace="fragments/header :: header">
+
+                    </div>
+                </div>
+                <style>
+                </style>
+                <div class="content-NEW top-margin">
+                    <div id="Coin-Data" class="render-width"></div>
+                    
+                    <!-- CODE GOES BELOW -->
+
+                    <div class="pane mobile">
+                        <!--recommendation chart lies here-->
+                        <canvas id="Prediction-Chart-Display" class="chart-height"></canvas>
+                        <div>
+                            <button type="button" class="button warning" onClick="resetZoom()">Reset View</button>
+                        </div> 
+                    </div>
+
+                    <div class="render-width">
+                        <div id="OrderForm"></div>
+                    </div>
+                    <!-- CODE GOES ABOVE -->
+
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <!-- FOOTER -->
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- JS libs -->
+    <!-- Foundation Libs -->
+
+    <!-- JAVASCRIPT -->
+    <div th:replace="fragments/javascript :: javascript">
+
+
+    </div>
+    <!-- Graph Lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="js/chartjs-plugin-zoom.min.js"></script>
+    
+
+   <script src="https://code.highcharts.com/highcharts.src.js"></script>
+
+    <script src="js/PredictionInfo.js" type="text/babel"></script>
+    <script src="js/PredictionChart.js"></script>
+    <!-- <script src="js/CurrencyInfo.js" type="text/babel"></script> -->
+    
+    <!--js file name updated-->
+
+    <!-- Buy/Sell JS -->
+    <script src="js/OrderCoin.js" type="text/babel"></script>
+    <script src="js/GrabSession.js" type="text/babel"></script>
+    
+</body>
+
+</html>
