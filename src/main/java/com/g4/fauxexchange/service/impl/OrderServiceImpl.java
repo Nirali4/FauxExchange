@@ -41,7 +41,7 @@ This is based on the users cash value.
 If user cash value greater than the order value we can create.
 If not we should then fail as this should not happen.
 
-TODO(Arnold): This could be improved from instead of returning booleans to returning an int with 
+TO DO(Arnold): This could be improved from instead of returning booleans to returning an int with 
 the usage of an enum.
  */
     @Override
@@ -101,7 +101,7 @@ In steps:
 2. Delete the order from the collection.
 
 This technically shouldn't fail.
-TODO(Arnold): Remove hardcoded values
+TO DO(Arnold): Remove hardcoded values
  */
     @Override
     public boolean deleteOrder(Order order) {
