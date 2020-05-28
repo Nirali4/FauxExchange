@@ -90,6 +90,16 @@
     color: white !important;
 }
 
+/*recommendation button*/
+.view-button {
+    background-size: 300% 100%;
+    margin-top: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    background-image: linear-gradient(to top right, rgb(103, 46, 136), rgb(152, 176, 212));
+    color: white !important;
+}
+
 .warning {
     background-size: 300% 100%;
     margin-top: 1em;
