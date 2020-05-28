@@ -1,4 +1,4 @@
-package com.g4.fauxexchange.service;
+package com.g4.fauxexchange.service.impl;
 
 public interface SecurityService {
     public abstract String findLoggedInUsername();
