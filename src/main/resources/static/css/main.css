@@ -195,6 +195,23 @@ a{
     height: 100%; */
 }
 
+/* Nirali: reco part*/
+.recomendation-div{
+    margin: 1em;
+    width: 90%;
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to top right, rgb(253, 253, 253), rgb(253, 253, 253));
+    -webkit-box-shadow: 0px 9px 60px -41px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 60px -41px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 60px -41px rgba(0, 0, 0, 0.75);
+    transition: all 1s;
+    align-items: center;
+}
+
 .content-split-two{
     /* width: 90%; */
     display: flex;
