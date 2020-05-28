@@ -66,6 +66,16 @@
                             <button type="button" class="button warning" onClick="resetZoom()">Reset View</button>
                         </div>
                     </div>
+                    
+                    <!--recommendation div-->
+                    <div class="recomendation-div mobile">
+                        <p>Want to be a top traders?</p>
+                        <div>
+                            <button type="button" class="button view-button" onClick="PreClick()">View Predication</button>
+                        </div>   
+                    </div>
+                    <!--recommendation div-->
+                    
                     <div class="render-width">
                         <div id="OrderForm"></div>
                     </div>
@@ -99,10 +109,64 @@
 
     <script src="js/CurrencyInfo.js" type="text/babel"></script>
     <script src="js/CurrencyChart.js"></script>
-
+    <!-- <script src="js/Predictionsinfo.js" type="text/babel"></script> -->
+    
     <!-- Buy/Sell JS-->
     <script src="js/OrderCoin.js" type="text/babel"></script>
     <script src="js/GrabSession.js" type="text/babel"></script>
+    
+    <!-- Calling the recomendation-page by ID-->
+            <script type="text/javascript">
+            function PreClick() {
+                            
+                console.log("Hi");
+                if (window.location.href.indexOf("BTC") > -1) {
+                    //alert("your url contains the name BTC");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=BTC')
+                }
+
+                else if (window.location.href.indexOf("XRP") > -1){
+                    //alert("your url contains the name XRP");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=XRP')
+                }
+
+                else if (window.location.href.indexOf("ETH") > -1){
+                    //alert("your url contains the name ETH");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=ETH')
+                }
+
+                else if (window.location.href.indexOf("LTC") > -1){
+                    //alert("your url contains the name LTC");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=LTC')
+                }
+
+                else if (window.location.href.indexOf("MRK") > -1){
+                    //alert("your url contains the name MRK");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=MRK')
+                }
+                             
+                else if (window.location.href.indexOf("ZEC") > -1){
+                    //alert("your url contains the name ZEC");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=ZEC')
+                }
+                             
+                else if (window.location.href.indexOf("DASH") > -1){
+                    //alert("your url contains the name DASH");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=DASH')
+                }
+
+                else if (window.location.href.indexOf("EOS") > -1){
+                    //alert("your url contains the name EOS");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=EOS')
+                }
+
+                else if (window.location.href.indexOf("DOGE") > -1){
+                    //alert("your url contains the name DOGE");
+                    $(location).attr('href', 'http://localhost:8080/recommendation?code=DOGE')
+                }
+            }
+        </script>
+    
 </body>
 
 </html>
