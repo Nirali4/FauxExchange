@@ -1,4 +1,4 @@
-package com.g4.fauxexchange.service;
+package com.g4.fauxexchange.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
