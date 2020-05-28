@@ -1,4 +1,4 @@
-package com.g4.fauxexchange.service.impl;
+package com.g4.fauxexchange.service;
 
 import java.util.List;
 import com.g4.fauxexchange.model.Order;
