@@ -1,4 +1,4 @@
-package com.g4.fauxexchange.service;
+package com.g4.fauxexchange.service.impl;
 
 import java.util.List ;
 import com.g4.fauxexchange.model.Currency;
